@@ -23,9 +23,10 @@ public class Ejercicio1 {
         }
         if(numero%2 == 0){
             System.out.println("Es par");
-            imprimirDescendientePar(numero);
+            imprimirDescendiente(numero);
         }else{
             System.out.println("Es impar");
+            imprimirDescendiente(numero);
         }
     }
     public static int leerNumero(){
@@ -34,7 +35,7 @@ public class Ejercicio1 {
         return scanner.nextInt();
     }
 
-    private static void imprimirDescendientePar(int numero) {
+    private static void imprimirDescendiente(int numero) {
         System.out.println("Cuenta descendiente:");
         for (int i = numero; i >= 0 ; i-=2) {
             System.out.println(i);
